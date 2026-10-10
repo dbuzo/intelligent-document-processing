@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "idp": {
+      "command": "/absolute/path/to/intelligent-document-processing/.venv/bin/idp-mcp",
+      "env": {
+        "IDP_API_URL": "https://<api-id>.execute-api.<region>.amazonaws.com/v1",
+        "IDP_API_TOKEN": "<Cognito ID token>"
+      }
+    }
+  }
+}

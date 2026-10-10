@@ -1,0 +1,46 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: pytest
+      - name: Offline end-to-end demo
+        run: python scripts/local_demo.py
+        env:
+          POWERTOOLS_LOG_LEVEL: WARNING
+
+  synth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install -r infra/requirements.txt
+      - name: cdk synth (asset bundling skipped; it needs Docker and adds nothing to validation)
+        working-directory: infra
+        env:
+          CDK_DEFAULT_ACCOUNT: "123456789012"
+          CDK_DEFAULT_REGION: us-east-1
+          CDK_CONTEXT_JSON: '{"aws:cdk:bundling-stacks": []}'
+          CDK_OUTDIR: cdk.out
+        run: python app.py && test -f cdk.out/IdpStack.template.json

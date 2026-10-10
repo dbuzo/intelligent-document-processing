@@ -1,0 +1,8 @@
+QUARTERLY USER ACCESS REVIEW - EVIDENCE
+Control ID: AC-02.3
+Evidence Date: 2026-04-05
+System: Epic EHR Production
+Performed By: IT Security Manager
+Period: Q1 2026
+Result: Exception
+Summary: 312 accounts reviewed. 4 terminated users still had active access; removed on 2026-04-06 (ticket SEC-4471).

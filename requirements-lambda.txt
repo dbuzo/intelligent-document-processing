@@ -1,0 +1,6 @@
+anthropic[bedrock]>=1.13
+pydantic>=2.9
+jsonschema>=4.20
+aws-lambda-powertools>=3.0
+opensearch-py>=2.7
+requests-aws4auth>=1.3

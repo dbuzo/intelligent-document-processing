@@ -1,0 +1,11 @@
+MASTER SERVICES AGREEMENT
+Title: Master Services Agreement
+This Agreement is entered into by and between Northwind Health Partners ("Customer") and Contoso Cloud Services Inc. ("Provider").
+Parties: Northwind Health Partners; Contoso Cloud Services Inc.
+Effective Date: January 15, 2026
+Termination Date: January 14, 2029
+Renewal Terms: Renews automatically for successive one-year terms unless either party gives 90 days written notice.
+Termination Notice Days: 90
+Governing Law: State of Delaware
+Liability Cap: Fees paid in the twelve months preceding the claim
+12. Limitation of Liability. Except for breaches of confidentiality, each party's aggregate liability is capped at the fees paid in the twelve months preceding the claim.

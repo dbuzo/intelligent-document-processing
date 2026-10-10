@@ -1,0 +1,17 @@
+ACME INDUSTRIAL SUPPLY LLC
+1200 Harbor Way, Oakland, CA 94607
+INVOICE
+Vendor Name: Acme Industrial Supply LLC
+Invoice Number: INV-2026-0417
+Invoice Date: March 3, 2026
+Due Date: April 2, 2026
+Bill To: Northwind Health Partners
+Purchase Order: PO-88213
+Currency: USD
+Description | Qty | Unit Price | Amount
+Nitrile gloves, case | 40 | 62.50 | 2,500.00
+Sharps containers | 25 | 18.00 | 450.00
+Subtotal: $2,950.00
+Tax: $258.13
+Total: $3,208.13
+Payment terms: Net 30
